@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+    
+body {
+  background-color: #FCF5F2;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #424242;
+  font-family: Karla, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+}
+    
+h2 { 
+  color: #424242;
+  font-family: Karla, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+    } 
+    
+ h3 { 
+  color: #424242;
+  font-family: Karla, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 27px;
+    } 
+
+p {
+  color: #424242;
+  font-family: Karla, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  text-align: justify;
+}
+ 
+a { 
+  color: #EDA05F; 
+  text-decoration: none;
+    } 
+ 
+a:hover { 
+  color: #EDA05F;
+  text-decoration: underline; 
+    } 
+    
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    
+  </style>
+<title>Marek Fronc's blog</title>
+</head>
+<body>
+<h1>Marek Fronc's blog. </h1>
+<p>this is a test for a blog. <a href="https://abumarkey.github.io">Here's</a> my bio.
+  <br><br>
+As exams are approaching, I'm finding new ways <i>not</i> to study. Here's one - coding a blog from scratch.</p> 
+  </body>
+</html>
