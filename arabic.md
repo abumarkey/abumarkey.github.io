@@ -1,3 +1,101 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;1,400;1,500&family=Karla:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+    
+  body {
+  background-color: #FAFAFA;
+  max-width: 500px;
+  float: center;
+  width: 80%; /* The width is 60%, by default */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 35px;
+}
+    
+h2 { 
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+    } 
+    
+ h3 { 
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 25px;
+    } 
+    
+  h4 { 
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 20px;
+    }
+
+p {
+  color: #424242;
+  font-family: Epilogue, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  }
+    
+span.small {
+  color: #424242;
+  font-family: 'Amiri', serif;
+  font-size: 30px;
+  text-align: center;
+    }
+    
+a { 
+  color: #58ACFA; 
+  text-decoration: none;
+    } 
+ 
+a:hover { 
+  color: #58ACFA;
+  text-decoration: underline;
+  text-decoraion-thickness: 0.3em;
+  
+    } 
+    
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    
+    ::-moz-selection {
+  color: $black;
+  background: #58ACFA;
+}
+::selection {
+  color: $black;
+  background: #58ACFA;
+}
+    
+  </style>
+<title>Marek Fronc</title>
+</head>
+<body>
+
 ## مَرحَباً! اِسمي ماريك فرونس
 
  <img src="https://i.postimg.cc/0N2VRbhh/D146074-E-0-C75-434-C-8-B13-F627-C0382682.png" alt="self-portrait" style="max-width:100%;height:auto;" />
