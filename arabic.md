@@ -96,7 +96,7 @@ img {
 </head>
 <body>
 
-## مَرحَباً! اِسمي ماريك فرونس
+<h1>مَرحَباً! اِسمي ماريك فرونس</h1>
 
  <img src="https://i.postimg.cc/0N2VRbhh/D146074-E-0-C75-434-C-8-B13-F627-C0382682.png" alt="self-portrait" style="max-width:100%;height:auto;" />
   
@@ -114,5 +114,5 @@ img {
   
 أنا أيضاً لاسلطويّ، أُوروبيّ وراكِب الدَّرّجة. 
 
-### التَّصال
+  <h1>التَّصال</h1>
 <p style="text-align:center"><a rel="me" href="https://101010.pl/@marc">ماستودون</a> &middot; <a href="https://www.behance.net/marekfronc">بيحانس</a> &middot; إيميل: marek.fronc@proton.me</p>
