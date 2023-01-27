@@ -1,6 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mirza&display=swap');
+    
+  body {
+  background-color: #FAFAFA;
+  max-width: 500px;
+  float: center;
+  width: 80%; /* The width is 60%, by default */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 35px;
+}
+    
+h2 { 
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+    } 
+    
+ h3 { 
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 25px;
+    } 
+    
+  h4 { 
+  color: #424242;
+  font-family: Karla, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 20px;
+    }
+
+p {
+  color: #424242;
+  font-family: IBM Plex Sans Devanagari, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  }
+    
+span.small {
+  color: #424242;
+  font-family: 'Amiri', serif;
+  font-size: 30px;
+  text-align: center;
+    }
+    
+a { 
+  color: #58ACFA; 
+  text-decoration: none;
+    } 
+ 
+a:hover { 
+  color: #58ACFA;
+  text-decoration: underline;
+  text-decoraion-thickness: 0.3em;
+  
+    } 
+    
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    
+    ::-moz-selection {
+  color: $black;
+  background: #58ACFA;
+}
+::selection {
+  color: $black;
+  background: #58ACFA;
+}
+    
+  </style>
+<title>Marek Fronc</title>
+</head>
+<body>
+
 ---
 title: Humans as a weapon
-layout: index.html
 ---
 
 There's been an continuous border crisis in Poland since 2021. That summer, first migrants were lured in by a ruthless dictator to be weaponised in his political games. But was he stupid? Did we ask ourselves what's his goal? How to score at his own game? Of course we didn't.
