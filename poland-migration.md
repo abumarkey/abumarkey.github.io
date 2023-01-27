@@ -1,6 +1,6 @@
 ---
 title: Humans as a weapon
-date: 27.01.23
+layout: index.html
 ---
 
 There's been an continuous border crisis in Poland since 2021. That summer, first migrants were lured in by a ruthless dictator to be weaponised in his political games. But was he stupid? Did we ask ourselves what's his goal? How to score at his own game? Of course we didn't.
