@@ -103,19 +103,19 @@ footer {
     
   </style>
    <body>
-   const xhr = new XMLHttpRequest();
-    const url = "https://api.github.com/repos/abumarkey/abumarkey.github.io/blog/"
-    // Replace -username- with your GitHub username, -repo- with the repository name, and then :path with a path to the file or folder you want to get the content of (leave blank to ge all files of the repository)
-
-    xhr.open('GET', url, true);
-
-    xhr.onload = function() {
-        const data = JSON.parse(this.response);
-
-        console.log(data);
-    };
-    
-    xhr.send();
+   <?php
+echo "abumarkey/abumarkey.github.io/blog/";
+$path = ".";
+$dh = opendir($path);
+$i=1;
+while (($file = readdir($dh)) !== false) {
+    if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
+        echo "<a href='$path/$file'>$file</a><br /><br />";
+        $i++;
+    }
+}
+closedir($dh);
+?> 
     </div>
 
 <footer class="footer">
