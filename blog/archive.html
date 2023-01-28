@@ -103,15 +103,10 @@ footer {
     
   </style>
    <body>
-   <input type="file" id="file_input" webkitdirectory="" directory="">
-      document.getElementById('file_input').addEventListener('change',function(e){
-    var gifs=e.target.files;
-    [].forEach.call(gifs,function(curGif){
-        var elt=document.createElement('img');
-        elt.setAttribute('src',(webkitURL||URL).createObjectURL(curGif));
-        document.body.appendChild(elt);
-    });
-},false);
+   <?php
+foreach(glob("archive.html") as $page){
+    echo '<li><a href="https://abumarkey.github.io/blog/poland-migration"></a></li>';
+}
     </div>
 
 <footer class="footer">
