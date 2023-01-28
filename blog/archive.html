@@ -104,8 +104,8 @@ footer {
   </style>
    <body>
    <div id="main" role="main" class="container">
-      async function list_directory(user, repo, directory) {
-  const url = `https://api.github.com/repos/${user}/${repo}/git/trees/master`;
+      async function list_directory(abumarkey, abumarkey.github.io, blog) {
+  const url = `https://api.github.com/repos/abumarkey/abumarkey.github.io/git/trees/master`;
   directory = directory.split('/').filter(Boolean);
   const dir = await directory.reduce(async (acc, dir) => {
       const { url } = await acc;
