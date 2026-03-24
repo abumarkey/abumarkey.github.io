@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marek Fronc</title>
   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+    
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Hanken Grotesk", Arial, sans-serif;
       font-size: 16px;
       line-height: 1.2em;
       text-align: justify;
@@ -18,7 +22,7 @@
     /* LEFT PANEL */
     .sidebar {
       width: 30%;
-      background: #f4f4f4;
+      background: #fff;
       padding: 20px;
       box-sizing: border-box;
       overflow-y: auto;
@@ -63,6 +67,11 @@ a:hover {
       max-width: 90%;
       max-height: 90vh;
       border-radius: 10px;
+      width: 80%;
+      height: 500px;        /* controls the size */
+      object-fit: cover;    /* crops images nicely */
+      border-radius: 10px;
+}
     }
 
     /* SIMPLE BUTTONS */
