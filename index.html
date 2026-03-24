@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marek Fronc</title>
   <style>
+    :root {
+      --bg: #FAFAFA;
+      --text: #262626;
+      --panel: #f4f4f4;
+      --main: #dddddd;
+    }
+
+    /* DARK MODE AUTOMATIC */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #262626;
+        --text: #FAFAFA;
+        --panel: #1e1e1e;
+        --main: #2a2a2a;
+      }
+    }
 
     @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -18,12 +34,14 @@
       text-align: justify;
       display: flex;
       height: 100vh;
+      background: var(--bg);
+      color: var(--text);
     }
 
     /* LEFT PANEL */
     .sidebar {
       width: 30%;
-      background: #fff;
+      background: var(--panel);
       padding: 20px;
       box-sizing: border-box;
       overflow-y: auto;
@@ -53,7 +71,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #fff;
+      background: var(--main);
       position: relative;
     }
 
@@ -159,10 +177,17 @@ a:hover {
       "IMG_7782.JPEG"
     ];
 
-    let index = 0;
+   let index = 0;
+    let interval;
 
     function showPhoto() {
-      document.getElementById("photo").src = photos[index];
+      const img = document.getElementById("photo");
+      img.style.opacity = 0;
+
+      setTimeout(() => {
+        img.src = photos[index];
+        img.style.opacity = 1;
+      }, 300);
     }
 
     function nextPhoto() {
@@ -174,7 +199,24 @@ a:hover {
       index = (index - 1 + photos.length) % photos.length;
       showPhoto();
     }
+
+    function startSlideshow() {
+      interval = setInterval(nextPhoto, 6000); // change every 6 seconds
+    }
+
+    function stopSlideshow() {
+      clearInterval(interval);
+    }
+
+    // START AUTOMATIC SLIDESHOW
+    startSlideshow();
+
+    // Pause on hover (nice UX)
+    const gallery = document.querySelector('.gallery');
+    gallery.addEventListener('mouseenter', stopSlideshow);
+    gallery.addEventListener('mouseleave', startSlideshow);
   </script>
+
 
 </body>
 </html>
