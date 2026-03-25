@@ -1,163 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marek Fronc</title>
   <style>
     
-    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
-     @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Mirza&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
     
-  body {
-  background-color: #FAFAFA;
-  max-width: 500px;
-  float: center;
-  width: 80%; /* The width is 60%, by default */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 {
-  color: #424242;
-  font-family: Hanken Grotesk, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 35px;
-}
-    
-h2 { 
-  color: #424242;
-  font-family: Hanken Grotesk, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 30px;
-    } 
-    
- h3 { 
-  color: #424242;
-  font-family: Hanken Grotesk, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 25px;
-    } 
-    
-  h4 { 
-  color: #424242;
-  font-family: Hanken Grotesk, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 20px;
+    :root {
+      --bg: #FAFAFA;
+      --text: #262626;
+      --panel: #f4f4f4;
+      --main: #f4f4f4;
     }
 
-p {
-  color: #424242;
-  font-family: Archivo, sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  text-align: justify;
-  line-height: 1.7;
-  }
-    
-span.small {
-  color: #424242;
-  font-family: Amiri, serif;
-  font-size: 30px;
-  text-align: center;
+    /* DARK MODE AUTOMATIC */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #262626;
+        --text: #FAFAFA;
+        --panel: #262626;
+        --main: #262626;
+      }
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
     
-a { 
-  color: #58ACFA; 
+    body {
+      margin: 0;
+      font-family: "Hanken Grotesk", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.3em;
+      font-weight: 300;
+      text-align: justify;
+      display: flex;
+      height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* LEFT PANEL */
+    .sidebar {
+      width: 30%;
+      background: var(--panel);
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+     font-family: "Hanken Grotesk", Arial, sans-serif;
+     color: var(--text);
+     font-weight: 400;
+     text-align: center; 
+}
+
+    .portrait {
+     max-width:60%;
+     height:auto;
+     display: block; 
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+}
+    }
+
+    .bio {
+      margin-top: 20px;
+    }
+
+    .contact {
+      margin-top: 20px;
+    }
+
+    /* RIGHT PANEL */
+    .main {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--main);
+      position: relative;
+    }
+
+    a {
+  color: #32AA27;
+  font-weight: normal;
   text-decoration: none;
-    } 
- 
-a:hover { 
-  color: #58ACFA;
-  text-decoration: underline;
-  text-decoraion-thickness: 0.3em;
-  
-    } 
-    
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-    
-    ::-moz-selection {
-  color: $black;
-  background: #58ACFA;
-}
-::selection {
-  color: $black;
-  background: #58ACFA;
 }
 
-    .dropbtn {
-  background-color: #f4f4f4;
-  font-family: Archivo, sans-serif;
-  color: #424242;
-  padding: 9px;
-  font-size: 14px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f4f4f4;
-  min-width: 145px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #424242;
-  font-size: 14px;
-  font-family: Archivo, sans-serif;
-  padding: 9px 9px;
+a:hover {
+  color: #298C20;
+  font-weight: normal;
   text-decoration: none;
-  display: block;
+} 
+      .gallery {
+  width: 80%;
+  aspect-ratio: 16 / 9;
 }
 
-.dropdown-content a:hover {background-color: #58ACFA;}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    }
 
-.dropdown:hover .dropdown-content {display: block;}
+    /* SIMPLE BUTTONS */
+    .controls {
+      position: absolute;
+      bottom: 20px;
+    }
 
-.dropdown:hover .dropbtn {background-color: #58ACFA;}
-    
+    button {
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      background: #32AA27;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #298C20;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar, .main {
+        width: 100%;
+        height: auto;
+}
+    }
   </style>
-<title>Marek Fronc</title>
 </head>
 <body>
-  <br>
-<h1>Cześć! Nazywam się Marek Fronc.</h1>
-  <br>
-<img src="https://raw.githubusercontent.com/abumarkey/abumarkey.github.io/refs/heads/master/selfie%20circle.png" alt="self-portrait" style="max-width:100%;height:auto;" />
-   <br>
-  <div style="max-width:100%;height:auto;" class="dropdown">
-  <button class="dropbtn">language</button>
-  <div class="dropdown-content">
-    <a href="https://abumarkey.github.io">English</a>
-    <a href="https://abumarkey.github.io/cestina">Czech</a>
-    <a href="https://abumarkey.github.io/deutsch">German</a>
-    <a href="https://abumarkey.github.io/arabic">Arabic</a>
-    <a href="https://abumarkey.github.io/svenska">Swedish</a>
+
+  <!-- LEFT SIDE -->
+  <div class="sidebar">
+    <div class="bio">
+     <h2>Hi! My name is Marek Fronc</h2>
+      <img src="https://raw.githubusercontent.com/abumarkey/abumarkey.github.io/refs/heads/master/selfie%20circle.png" alt="My portrait" class="portrait">
+      <p>
+        Jestem fotografem, blogerem, tłumaczem i lektorem agnielskiego. Prowadzę własny biznes - <a href="https://maybehelen.pl/">MaybeHelen</a>.<br>
+        Dzielę swój czas między Polską a Bliskim Wschodem. Spędziłem sześć lat w Bahrajnie i ukończyłem studia bliskowschodnie na UJ. Ciekawski jestem, a zainteresowany przede wszystkim społeczeństwem i polityką regionu.<br>
+        Robię zdjęcia <a href="https://pixelfed.social/fronc">miastom i krajobrazom</a>. Skupiam się na tym co zwykłe i próbuję uchwycić w sposób miły dla oka.<br>
+        Piszę dwa blogi o Bliskim Wschodzie (<a href="https://abumarkey.github.io/arabizmy">po polsku</a> i <a href="https://arabism.bearblog.dev/">po angielsku</a>), oraz o Polsce <a href="https://bulandii.eu/">po arabsku</a>. W dobie sensacji, Facebooka i fake newsów, dobrze jest mieć przestrzeń, która uspokaja głowę sprawdzonymi informacjami.
+      </p>
+    </div>
+
+    <div class="contact">
+      <h3>Kontakt</h3>
+      <center><p>email: marek.fronc@proton.me<br>
+      <a href="https://masto.ai/@abumarkey">mastodon</a> · <a href="https://pixelfed.social/fronc">pixelfed</a> · <a href="https://www.instagram.com/abumarkey/">instagram</a> · <a href="https://www.behance.net/marekfronc">behance</a></p></center>
+    </div>
   </div>
-</div> 
-  <br>
-<p>Robię różne rzeczy. <a href="https://maybehelen.pl/">Uczę</a> angielskiego.Piszę o bliskim wschodzie <a href="https://abumarkey.github.io/arabizmy/">po polsku</a> i <a href="https://arabism.bearblog.dev/">po angielsku</a> oraz o Polsce <a href="https://bulandii.eu/">po arabsku</a>. Robię <a href="https://pixelfed.social/fronc">zdjęcia</a>. Uczę się języków (szwedzki, niemiecki, arabski). Lubię języki: mówię po czesku.</p>
-<p>Mieszkałem w Bahrajnie 5 lat. Tam ukończyłem liceum, a potem studia bliskowschodnie na UJ. Fascynuję się Bliskim Wschodem i światem - wszystko to naczynia połączone.</p>
-<p> Po godzinach gracz (strategie, akcyjniaki) i czytelnik (sensacja, non-fiction).<p>
-  
-<h3>kontakt</h3>
-<p style="text-align:center"><a rel="me" href="https://masto.ai/@abumarkey">mastodon</a> &middot; e-mail: marek.fronc@proton.me</p>
-  <br><p style="text-align:center"><span class="small">ماريك فرونس</span></p>
-       </body>
+
+  <!-- RIGHT SIDE -->
+<div class="main">
+    <div class="gallery">
+      <img id="photo" src="photo1.jpg" alt="loading photos... Copyright © 2026 Marek Fronc. All Rights Reserved">
+    </div>
+
+  <script>
+    const photos = [
+      "20220106_101143338_iOS.PNG",
+      "IMG_2033.jpg",
+      "69729694-65AD-456E-A85B-AE3F27D91A06.jpg",
+      "IMG_2255.jpg",
+      "IMG_2204.jpg",
+      "IMG_2383.jpg",
+      "IMG_7084.jpg",
+      "IMG_9156.jpg",
+      "01122023123911.JPEG",
+      "IMG_8199.jpg",
+      "20220123_154733998_iOS.JPEG",
+      "IMG_8374.jpg",
+      "IMG_5168.JPEG",
+      "IMG_7183.JPEG",
+      "IMG_7782.JPEG"
+    ];
+
+   let index = 0;
+    let interval;
+
+    function showPhoto() {
+      const img = document.getElementById("photo");
+      img.style.opacity = 0;
+
+      setTimeout(() => {
+        img.src = photos[index];
+        img.style.opacity = 1;
+      }, 300);
+    }
+
+    function nextPhoto() {
+      index = (index + 1) % photos.length;
+      showPhoto();
+    }
+
+    function prevPhoto() {
+      index = (index - 1 + photos.length) % photos.length;
+      showPhoto();
+    }
+
+    function startSlideshow() {
+      interval = setInterval(nextPhoto, 6000); // change every 6 seconds
+    }
+
+    function stopSlideshow() {
+      clearInterval(interval);
+    }
+
+    // START AUTOMATIC SLIDESHOW
+    startSlideshow();
+
+    // Pause on hover (nice UX)
+    const gallery = document.querySelector('.gallery');
+    gallery.addEventListener('mouseenter', stopSlideshow);
+    gallery.addEventListener('mouseleave', startSlideshow);
+  </script>
+
+
+</body>
 </html>
